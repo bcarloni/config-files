@@ -3,11 +3,13 @@
 [[ -s "/Users/bcarloni/.gvm/bin/gvm-init.sh" ]] && source "/Users/bcarloni/.gvm/bin/gvm-init.sh"
 
 #Alias
+alias reload_bash='source ~/.bash_profile'
 alias batman='ssh 10.100.41.3'
 alias l='ls -la'
 alias q='python /Users/bcarloni/Dropbox/Documentos/MELI/scripts/queryOW.py'
 alias payment='python /Users/bcarloni/Dropbox/Documentos/MELI/scripts/paymentsScopes.py'
 alias cdop='cd /Users/bcarloni/Documents/proyects/payments-api_v2/webserver'
+alias gtest='grails test-app -functional'
 
 
 # Git branch in prompt.
