@@ -28,5 +28,6 @@
 	lg = log -p
 	mt = mergetool
 	a = add .
+	mg = merge --no-ff
 [merge]
 	tool = opendiff
