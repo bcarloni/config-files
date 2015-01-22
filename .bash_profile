@@ -6,7 +6,7 @@ alias cdop='cd /Users/bcarloni/Documents/proyects/payments-api_v2/webserver'
 alias q='python /Users/bcarloni/Dropbox/Documentos/MELI/scripts/queryOW.py'
 alias payment='python /Users/bcarloni/Dropbox/Documentos/MELI/scripts/paymentsScopes.py'
 #Alias
-alias git_key='python ~/dev/config-files/scripts/sshKey.py'
+alias git_key='python ~/dev/config-files/scripts/sshGit.py'
 alias reload_bash='source ~/.bash_profile'
 alias l='ls -la'
 alias gtest='grails test-app -functional'
