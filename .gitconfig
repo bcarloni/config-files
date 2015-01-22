@@ -21,7 +21,7 @@
 	st = status
 	ci = commit -a -m
 	br = branch
-	pl = pull origin master 
+	pl = pull origin 
 	ps = push origin
 	co = checkout
 	df = diff
