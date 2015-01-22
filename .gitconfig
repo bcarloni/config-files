@@ -22,7 +22,7 @@
 	ci = commit -a -m
 	br = branch
 	pl = pull origin master 
-	ps = push origin
+	ps = push origin master
 	co = checkout
 	df = diff
 	lg = log -p
