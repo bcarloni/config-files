@@ -1,29 +1,16 @@
 #!/bin/bash
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/bcarloni/.gvm/bin/gvm-init.sh" ]] && source "/Users/bcarloni/.gvm/bin/gvm-init.sh"
 
-#Alias
-alias reload_bash='source ~/.bash_profile'
+#Work alias
 alias batman='ssh 10.100.41.3'
-alias l='ls -la'
+alias cdop='cd /Users/bcarloni/Documents/proyects/payments-api_v2/webserver'
 alias q='python /Users/bcarloni/Dropbox/Documentos/MELI/scripts/queryOW.py'
 alias payment='python /Users/bcarloni/Dropbox/Documentos/MELI/scripts/paymentsScopes.py'
-alias cdop='cd /Users/bcarloni/Documents/proyects/payments-api_v2/webserver'
+#Alias
+alias git_key='python ~/dev/config-files/scripts/sshKey.py'
+alias reload_bash='source ~/.bash_profile'
+alias l='ls -la'
 alias gtest='grails test-app -functional'
 
-
-# Git branch in prompt.
-#parse_git_branch() {
-#    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-#}
-#export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
-
-#  Customize BASH PS1 prompt to show current GIT repository and branch.
-#  by Mike Stewart - http://MediaDoneRight.com
-
-#  SETUP CONSTANTS
-#  Bunch-o-predefined colors.  Makes reading code easier than escape sequences.
-#  I don't remember where I found this.  o_O
 
 # Reset
 Color_Off="\[\033[0m\]"       # Text Reset
@@ -129,3 +116,6 @@ else \
   echo " '$Blue$PathShort$Color_Off'\$ "; \
 fi)'
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/bcarloni/.gvm/bin/gvm-init.sh" ]] && source "/Users/bcarloni/.gvm/bin/gvm-init.sh"
