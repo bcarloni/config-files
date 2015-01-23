@@ -16,6 +16,7 @@ alias cdconf='cd /Users/bcarloni/Documents/proyects/config-files'
 alias git_key='python ~/dev/config-files/scripts/sshGit.py'
 alias reload_bash='source ~/dev/config-files/.bash_profile'
 alias l='ls -la'
+alias woof='python ~/dev/config-files/scripts/woof.py'
 #==========================
 
 # Reset
