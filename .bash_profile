@@ -13,7 +13,7 @@ alias gclean='grails clean'
 alias gcall='grails cleanAll'
 #Varios
 alias git_key='python ~/dev/config-files/scripts/sshGit.py'
-alias reload_bash='source ~/.bash_profile'
+alias reload_bash='source ~/dev/config-files/.bash_profile'
 alias l='ls -la'
 #==========================
 
