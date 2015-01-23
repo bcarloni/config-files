@@ -14,13 +14,14 @@ print("\nCreating directory  ~/dev")
 os.system("mkdir ~/dev")
 
 #Creating data storage
-path = "/Users/bcarloni/dev/"
-file = open(os.path.join(path + 'config.dat'), 'w+')
-file.write("user:" + raw_input("User:")  + "\n")
-file.write("pass:" + raw_input("Pass:") + "\n")
+path = "/Users/bcarloni/dev/config.dat"
+if os.path.exists(path) == False:
+    file = open(os.path.join(path), 'w+')
+    file.write("user:" + raw_input("User:")  + "\n")
+    file.write("pass:" + raw_input("Pass:") + "\n")
 
 print("\nCloning git@github.com:bcarloni/config-files.git  into  ~/dev/config-files")
-os.system("rm -r ~/dev/config-files")
+os.system("rm -rf ~/dev/config-files")
 os.system("git clone git@github.com:bcarloni/config-files.git ~/dev/config-files")
 
 print("\nSeting symbolic link to: ~/.gitconfig")
