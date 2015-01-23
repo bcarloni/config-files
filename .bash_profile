@@ -11,6 +11,8 @@ alias grun='grails RunApp'
 alias gtest='grails test-app -functional'
 alias gclean='grails clean'
 alias gcall='grails cleanAll'
+alias gcontroller='grails create-controller'
+alias gservice='grails create-service'
 #Varios
 alias cdconf='cd /Users/bcarloni/Documents/proyects/config-files'
 alias git_key='python ~/dev/config-files/scripts/sshGit.py'
