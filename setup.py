@@ -13,6 +13,12 @@ print("Initializing config-files installation ...\n")
 print("\nCreating directory  ~/dev")
 os.system("mkdir ~/dev")
 
+#Creating data storage
+os.system("cd ~/dev")
+file = open('config.dat', 'w+')
+file.write("user:" + raw_input("User:")  + "\n")
+file.write("pass:" + raw_input("Pass:") + "\n")
+
 print("\nCloning git@github.com:bcarloni/config-files.git  into  ~/dev/config-files")
 os.system("rm -r ~/dev/config-files")
 os.system("git clone git@github.com:bcarloni/config-files.git ~/dev/config-files")
