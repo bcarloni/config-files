@@ -14,8 +14,8 @@ print("\nCreating directory  ~/dev")
 os.system("mkdir ~/dev")
 
 #Creating data storage
-os.system("cd ~/dev")
-file = open('config.dat', 'w+')
+path = "/Users/bcarloni/dev/"
+file = open(os.path.join(path + 'config.dat'), 'w+')
 file.write("user:" + raw_input("User:")  + "\n")
 file.write("pass:" + raw_input("Pass:") + "\n")
 
