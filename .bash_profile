@@ -1,16 +1,21 @@
 #!/bin/bash
 
-#Work alias
-alias batman='ssh 10.100.41.3'
+# ========== Alias ==========
+#Work
+alias batman='python ~/dev/config-files/scripts/loginBatman.py'
 alias cdop='cd /Users/bcarloni/Documents/proyects/payments-api_v2/webserver'
 alias q='python /Users/bcarloni/Dropbox/Documentos/MELI/scripts/queryOW.py'
 alias payment='python /Users/bcarloni/Dropbox/Documentos/MELI/scripts/paymentsScopes.py'
-#Alias
+#Grails
+alias grun='grails RunApp'
+alias gtest='grails test-app -functional'
+alias gclean='grails clean'
+alias gcall='grails cleanAll'
+#Varios
 alias git_key='python ~/dev/config-files/scripts/sshGit.py'
 alias reload_bash='source ~/.bash_profile'
 alias l='ls -la'
-alias gtest='grails test-app -functional'
-
+#==========================
 
 # Reset
 Color_Off="\[\033[0m\]"       # Text Reset
