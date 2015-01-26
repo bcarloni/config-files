@@ -16,14 +16,19 @@ def sigwinch_passthrough (sig, data):
 #Load config file
 user = ""
 password = ""
-path = os.environ['HOME'] + "/dev/"
-f = open( os.path.join(path + "config.dat"))
+path = os.environ['HOME'] + "/dev/config.dat"
+if os.path.exists(path) == False:
+    file = open(os.path.join(path), 'w+')
+    file.write("meli_user:" + raw_input("MELI User:")  + "\n")
+    file.write("meli_password:" + raw_input("MELI Pass:") + "\n")
+
+f = open( os.path.join(path) )
 try:
     for line in f:
-        if "user:" in line:
+        if "meli_user:" in line:
             user = str(line).split(':')[1]
             user = str(user).split('\n')[0]
-        if "pass:" in line:
+        if "meli_password:" in line:
             password = str(line).split(':')[1]
             password = str(str(password).split('\n')[0])
 finally:

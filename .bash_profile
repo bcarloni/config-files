@@ -15,6 +15,7 @@ alias gcontroller='grails create-controller'
 alias gservice='grails create-service'
 #Varios
 alias cdbox='cd $HOME/Dropbox/'
+alias cdev='cd $HOME/dev/'
 alias cdconf='cd $HOME/Documents/proyects/config-files'
 alias l='ls -la'
 alias git_key='python ~/dev/config-files/scripts/sshGit.py'

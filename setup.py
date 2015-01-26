@@ -17,8 +17,8 @@ os.system("mkdir ~/dev")
 path = os.environ['HOME'] + "/dev/config.dat"
 if os.path.exists(path) == False:
     file = open(os.path.join(path), 'w+')
-    file.write("user:" + raw_input("User:")  + "\n")
-    file.write("pass:" + raw_input("Pass:") + "\n")
+    file.write("meli_user:" + raw_input("MELI User:")  + "\n")
+    file.write("meli_password:" + raw_input("MELI Pass:") + "\n")
 
 print("\nCloning git@github.com:bcarloni/config-files.git  into  ~/dev/config-files")
 os.system("rm -rf ~/dev/config-files")
