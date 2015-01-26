@@ -16,7 +16,7 @@ def sigwinch_passthrough (sig, data):
 #Load config file
 user = ""
 password = ""
-path = "/Users/bcarloni/dev/"
+path = os.environ['HOME'] + "/dev/"
 f = open( os.path.join(path + "config.dat"))
 try:
     for line in f:

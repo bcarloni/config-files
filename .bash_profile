@@ -2,10 +2,10 @@
 
 # ========== Alias ==========
 #Work
-alias batman='python ~/dev/config-files/scripts/loginBatman.py'
-alias cdop='cd /Users/bcarloni/Documents/proyects/payments-api_v2/webserver'
-alias q='python /Users/bcarloni/Dropbox/Documentos/MELI/scripts/queryOW.py'
-alias payment='python /Users/bcarloni/Dropbox/Documentos/MELI/scripts/paymentsScopes.py'
+alias batman='python $HOME/dev/config-files/scripts/loginBatman.py'
+alias cdop='cd $HOME/Documents/proyects/payments-api_v2/webserver'
+alias q='python $HOME/Dropbox/Documentos/MELI/scripts/queryOW.py'
+alias payment='python $HOME/Dropbox/Documentos/MELI/scripts/paymentsScopes.py'
 #Grails
 alias grun='grails RunApp'
 alias gtest='grails test-app -functional'
@@ -14,10 +14,11 @@ alias gcall='grails cleanAll'
 alias gcontroller='grails create-controller'
 alias gservice='grails create-service'
 #Varios
-alias cdconf='cd /Users/bcarloni/Documents/proyects/config-files'
+alias cdbox='cd $HOME/Dropbox/'
+alias cdconf='cd $HOME/Documents/proyects/config-files'
+alias l='ls -la'
 alias git_key='python ~/dev/config-files/scripts/sshGit.py'
 alias reload_bash='source ~/dev/config-files/.bash_profile'
-alias l='ls -la'
 alias woof='python ~/dev/config-files/scripts/woof.py'
 #==========================
 

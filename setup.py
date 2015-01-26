@@ -14,7 +14,7 @@ print("\nCreating directory  ~/dev")
 os.system("mkdir ~/dev")
 
 #Creating data storage
-path = "/Users/bcarloni/dev/config.dat"
+path = os.environ['HOME'] + "/dev/config.dat"
 if os.path.exists(path) == False:
     file = open(os.path.join(path), 'w+')
     file.write("user:" + raw_input("User:")  + "\n")
