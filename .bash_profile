@@ -23,6 +23,10 @@ alias reload_bash='source ~/dev/config-files/.bash_profile'
 alias woof='python ~/dev/config-files/scripts/woof.py'
 #==========================
 
+#autojump
+[[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
+
+
 # Reset
 Color_Off="\[\033[0m\]"       # Text Reset
 
