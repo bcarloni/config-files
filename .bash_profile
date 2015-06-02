@@ -2,7 +2,7 @@
 
 # ========== Alias ==========
 #Work
-alias batman='ssh 10.100.41.3'
+alias batman='sshml' #'ssh 10.100.41.3'
 alias cdop='cd $HOME/Documents/proyects/payments-api_v2/webserver'
 alias q='python $HOME/Dropbox/Documentos/MELI/scripts/queryOW.py'
 alias payment='python $HOME/Dropbox/Documentos/MELI/scripts/paymentsScopes.py'
