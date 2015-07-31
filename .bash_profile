@@ -12,14 +12,14 @@ alias grun='grails RunApp'
 runTestBeta(){
         echo > ~/op-payments-beta.log
         grails test-app -functional -Dreg=beta $1 > ~/op-payments-beta.log
-        tail -f ~/op-payments-beta.log
+        cat ~/op-payments-beta.log  | grep "view reports in"
 }
 alias gtbeta=runTestBeta
 #Tests desa
 runTestDesa(){
         echo > ~/op-payments-desa.log
-        grails test-app -functional $1 > ~/op-payments-desa.log
-        tail -f ~/op-payments-desa.log
+        grails test-app -functional $1 | >  ~/op-payments-desa.log
+        cat ~/op-payments-desa.log  | grep "view reports in"
 }
 alias gtest=runTestDesa
 alias gclean='grails clean'
